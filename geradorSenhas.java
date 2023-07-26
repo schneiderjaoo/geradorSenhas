@@ -60,7 +60,7 @@ public class GeradorDeSenhas {
         }
         return new String(characters);
     }
-
+//printa a senha na tela
     private static void imprimirSenha(String senha) {
         System.out.println("Senha gerada: " + senha);
     }
