@@ -16,8 +16,8 @@ public class GeradorDeSenhas {
     }
 
     private static String gerarSenha(int tamanho) {
-       if (tamanho < 4) {
-            throw new IllegalArgumentException("O tamanho mínimo da senha é 4.");
+       if (tamanho < 8) {
+            throw new IllegalArgumentException("O tamanho mínimo da senha é 8.");
         }
 
         SecureRandom secureRandom = new SecureRandom();
