@@ -4,19 +4,19 @@ import java.util.Random;
 public class GeradorDeSenhas {
 
     private static final String LETRAS_MINUSCULAS = "abcdefghijklmnopqrstuvwxyz";
-    private static final String LETRAS_MAIUSCULAS = LETRAS_MINUSCULAS.toUpperCase();
+    private static final String LETRAS_MAIUSCULAS = LETRAS_MINUSCULAS.toUpperCase();  //pegando a classe LETRAS_MINUSCULAS e colocando um Upper para ficarem todas maiusculas
     private static final String CARACTERES_ESPECIAIS = "!@#$%^&*()-_=+[{]};:'\",<.>/?";
     private static final String NUMEROS = "0123456789";
-    private static final String CARACTERES_PERMITIDOS = LETRAS_MINUSCULAS + LETRAS_MAIUSCULAS + CARACTERES_ESPECIAIS + NUMEROS;
+    private static final String CARACTERES_PERMITIDOS = LETRAS_MINUSCULAS + LETRAS_MAIUSCULAS + CARACTERES_ESPECIAIS + NUMEROS; //definindo um padrão para as senhas
 
     public static void main(String[] args) {
-        int tamanhoSenha = 12;
+        int tamanhoSenha = 12; //senha com o maximo de caracteres como 12
         String senha = gerarSenha(tamanhoSenha);
         imprimirSenha(senha);
     }
 
     private static String gerarSenha(int tamanho) {
-       if (tamanho < 8) {
+       if (tamanho < 8) { //tamanho mínimo para senha
             throw new IllegalArgumentException("O tamanho mínimo da senha é 8.");
         }
 
