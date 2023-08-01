@@ -1,3 +1,3 @@
 # geradorSenhas
 
-  Código criado para a geração de uma senha forte para o usuário 
+  Criação de uma senha totalmente aleatória com a combinação de caracteres especiais e números e letras maiúsculas e minúsculas
